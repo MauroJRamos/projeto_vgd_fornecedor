@@ -1,10 +1,13 @@
-import 'bootstrap/dist/css/bootstrap.css';
-import './App.css';
+import "./assets/styles/custom.scss";
+import "./App.css";
+import Routes from "Routes";
 
-function App() {
+const App = () => {
   return (
-    <h1>Controle Fornecedores</h1>
+    <>
+      <Routes/>
+    </>
   );
-}
+};
 
 export default App;

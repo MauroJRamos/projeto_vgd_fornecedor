@@ -17,10 +17,10 @@ public class FornecedorService {
 	private FornecedorRepository repository;
 	
 	@Transactional(readOnly = true)
-	public Page<FornecedorDTO> findAllPaged(Pageable pageable) {
-		Page<Fornecedor> list = repository.findAll(pageable);
+	public Page<FornecedorDTO> findAllPaged(String categoria, String pathCidade, Pageable pageable) {
+		Page<Fornecedor> list = repository.findByDscCategoriaContainingAndDscPathCidadeContaining(categoria, pathCidade, pageable);
 		return list.map(x -> new FornecedorDTO(x));
-		
+	
 
 	}
 

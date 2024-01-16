@@ -23,7 +23,7 @@ public class Fornecedor implements Serializable {
 	@Column(name = "dsc_fornecedor")
 	private String dscFornecedor;
 	
-	@Column(name = "dsc_Email")
+	@Column(name = "dsc_email")
 	private String dscEmail;
 	
 	@Column(name = "dsc_data_solicitacao")
