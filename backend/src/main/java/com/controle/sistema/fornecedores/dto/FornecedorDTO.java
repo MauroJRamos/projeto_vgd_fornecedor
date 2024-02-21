@@ -49,7 +49,7 @@ public class FornecedorDTO implements Serializable {
         this.dscRetorno02 = entity.getDscRetorno02();
         this.dscContato01 = entity.getDscContato01();
         this.dscContato02 = entity.getDscContato02();
-        this.dscContato02 = entity.getDscContato03();
+        this.dscContato03 = entity.getDscContato03();
         this.dscCategoria = entity.getDscCategoria();
         this.dscPathCidade = entity.getDscPathCidade();
     }

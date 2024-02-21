@@ -3,7 +3,7 @@ import os
 from ArquivosDAO import insertArquivos
 from ConectorDB import getConnection
 from ConfigParser import getDadosConfigArquivo
-
+# planilha testada (oficial)
 if __name__ == '__main__':
     cnx = getConnection()
     status_execucao = "N"

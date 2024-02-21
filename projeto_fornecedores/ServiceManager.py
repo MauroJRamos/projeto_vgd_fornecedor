@@ -6,7 +6,7 @@ import os
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 from ConfigParser import getDadosConfigEmail
-from FornecedorDAO import getDataProdutoNaoEncontrado,getDataProdutosEstoquePositivo,getDataProdutosSemEstoque
+#from FornecedorDAO import getDataProdutoNaoEncontrado,getDataProdutosEstoquePositivo,getDataProdutosSemEstoque
 from ConectorDB import getConnection
 
 
@@ -99,31 +99,3 @@ def enviarEmail(destinatarios, assunto, corpo, emailRemetente, senha, smtp_serve
 
     print("E-mail enviado com sucesso!")
 
-
-
-
-def geraRelatorioDeExecuçãoDoRobo(cnx):
-    print("Gerando os dados para Relatorio...")
-    produtosSemEstoque = getDataProdutosSemEstoque(cnx)
-    produtosEstoquePositivo = getDataProdutosEstoquePositivo(cnx)
-    produtosNaoEncontrado = getDataProdutoNaoEncontrado(cnx)
-    criar_arquivo_txt(produtosNaoEncontrado, "nao_encontrados")
-    criar_arquivo_txt(produtosSemEstoque, "sem_estoque")
-    criar_arquivo_txt(produtosEstoquePositivo,"estoque_positivo")
-    qtd_prod_nao_encont = len(produtosNaoEncontrado)
-    qtd_prod_estoque_positivo = len(produtosEstoquePositivo)
-    qtd_prod_sem_estoque = len(produtosSemEstoque)
-    emailRemetente, senha, smtp_server, smtp_port, destinatarios = getDadosConfigEmail()
-    #email_destinatario = destinatarios #['mauroramosti@gmail.com','mauronegociosblr@gmail.com']
-    assunto = 'Relatorio de execução do Robo cadastro de produtos'
-    corpo = f"""
-        <html>
-            <body>
-                <h3>Relatórios de dados sobre a execução do Robo de cadastro de novos produtos</h3>
-                <p>Quantidade de produtos não encontrados:      {qtd_prod_nao_encont}</p>
-                <p>Quantidade de produtos com estoque positivo: {qtd_prod_estoque_positivo}</p>
-                <p>Quantidade de produtos sem estoque:          {qtd_prod_sem_estoque}</p>
-            </body>
-        </html>
-        """
-    enviarEmailComAnexo(destinatarios, assunto, corpo,emailRemetente, senha, smtp_server, smtp_port)

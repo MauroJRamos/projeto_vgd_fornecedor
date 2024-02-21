@@ -4,6 +4,7 @@ import Navbar from "components/Navbar";
 import Catalogo from "pages/Catalogo";
 import history from "util/history";
 import Admin from "pages/Admin";
+import Form from "pages/Catalogo/Form";
 
 const Routes = () => (
   <Router history={history}>
@@ -12,10 +13,13 @@ const Routes = () => (
       <Route path="/" exact>
         <Home />
       </Route>
-      <Route path="/produtos" exact>
+      <Route path="/fornecedores" exact>
         <Catalogo />
       </Route>
-      <Redirect from="/admin" to="/admin/produtos" exact />
+      <Route path="/fornecedores/:fornecedorId" exact>
+        <Form />
+      </Route>
+      <Redirect from="/admin" to="/admin/fornecedores" exact />
       <Route path="/admin">
         <Admin />
       </Route>

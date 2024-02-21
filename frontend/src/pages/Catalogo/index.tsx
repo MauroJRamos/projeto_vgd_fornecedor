@@ -5,9 +5,9 @@ const Catalogo = () => {
   
 
   return (
-    <div className=" my-4  base-card">
+    <div className="container my-4  base-card ">
       <div className="row">
-            <div className="row" >
+            <div className="row datatable-container-new" >
               <DataTable/>
             </div>
         

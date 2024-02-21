@@ -6,6 +6,7 @@ import './styles.css';
 import Marcas from './Marcas';
 import Ancora from './DadosAncora';
 import PostBling from './PostBling';
+import Fornecedor from 'pages/Catalogo/Routes';
 
 const Admin = () => {
   return (
@@ -13,8 +14,8 @@ const Admin = () => {
       <Navbar />
       <div className="admin-content">
         <Switch>
-          <Route path="/admin/produtos">
-            <Produtos/>
+          <Route path="/catalogo/fornecedores">
+            <Fornecedor/>
           </Route>
           <Route path="/admin/marca">
             <Marcas/>
