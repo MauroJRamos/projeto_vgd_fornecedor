@@ -9,11 +9,11 @@ logging.basicConfig(level=logging.INFO)
 # Create a logger object
 logger = logging.getLogger(__name__)
 
-def insertArquivos(cnx,caminho_arquivo, pasta_rel_comprasnet, status_execucao):
+def insertArquivos(cnx,caminho_arquivo, pasta_rel_comprasnet, ano_pasta, status_execucao):
     try:
         cursor = cnx.cursor()
-        sql = "INSERT INTO tb_arquivos (path_arq_contacao, path_pasta_cidade, status_execucao, data_execucao) VALUES (%s, %s, %s, %s)"
-        val = (caminho_arquivo, pasta_rel_comprasnet,status_execucao, datetime.now())
+        sql = "INSERT INTO tb_arquivos (path_arq_contacao, path_pasta_cidade,path_pasta_ano, status_execucao, data_execucao) VALUES (%s, %s, %s,%s, %s)"
+        val = (caminho_arquivo, pasta_rel_comprasnet, ano_pasta, status_execucao, datetime.now())
 
         cursor.execute(sql, val)
         cnx.commit()

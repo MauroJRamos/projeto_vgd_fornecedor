@@ -92,7 +92,7 @@ public class FornecedorService {
 		entity.setDscContato03(dto.getDscContato03());
 		entity.setDscCategoria(dto.getDscCategoria());
 		entity.setDscPathCidade(dto.getDscPathCidade());
-		
+		entity.setPathPastaAno(dto.getPathPastaAno());
 	}
 
 }

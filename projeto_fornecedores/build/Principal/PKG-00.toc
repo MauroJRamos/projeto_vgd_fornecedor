@@ -1,0 +1,100 @@
+('C:\\Mauro\\Projetos\\Projeto VGD - CAD '
+ 'Fornecedores\\fonte\\projeto_fornecedores\\build\\Principal\\Principal.pkg',
+ {'BINARY': True,
+  'DATA': True,
+  'EXECUTABLE': True,
+  'EXTENSION': True,
+  'PYMODULE': True,
+  'PYSOURCE': True,
+  'PYZ': False,
+  'SPLASH': True,
+  'SYMLINK': False},
+ [('pyi-contents-directory _internal', '', 'OPTION'),
+  ('PYZ-00.pyz',
+   'C:\\Mauro\\Projetos\\Projeto VGD - CAD '
+   'Fornecedores\\fonte\\projeto_fornecedores\\build\\Principal\\PYZ-00.pyz',
+   'PYZ'),
+  ('struct',
+   'C:\\Mauro\\Projetos\\Projeto VGD - CAD '
+   'Fornecedores\\fonte\\projeto_fornecedores\\build\\Principal\\localpycs\\struct.pyc',
+   'PYMODULE'),
+  ('pyimod01_archive',
+   'C:\\Mauro\\Projetos\\Projeto VGD - CAD '
+   'Fornecedores\\fonte\\projeto_fornecedores\\build\\Principal\\localpycs\\pyimod01_archive.pyc',
+   'PYMODULE'),
+  ('pyimod02_importers',
+   'C:\\Mauro\\Projetos\\Projeto VGD - CAD '
+   'Fornecedores\\fonte\\projeto_fornecedores\\build\\Principal\\localpycs\\pyimod02_importers.pyc',
+   'PYMODULE'),
+  ('pyimod03_ctypes',
+   'C:\\Mauro\\Projetos\\Projeto VGD - CAD '
+   'Fornecedores\\fonte\\projeto_fornecedores\\build\\Principal\\localpycs\\pyimod03_ctypes.pyc',
+   'PYMODULE'),
+  ('pyimod04_pywin32',
+   'C:\\Mauro\\Projetos\\Projeto VGD - CAD '
+   'Fornecedores\\fonte\\projeto_fornecedores\\build\\Principal\\localpycs\\pyimod04_pywin32.pyc',
+   'PYMODULE'),
+  ('pyiboot01_bootstrap',
+   'C:\\Mauro\\Projetos\\Projeto VGD - CAD '
+   'Fornecedores\\fonte\\projeto_fornecedores\\venv\\Lib\\site-packages\\PyInstaller\\loader\\pyiboot01_bootstrap.py',
+   'PYSOURCE'),
+  ('pyi_rth_inspect',
+   'C:\\Mauro\\Projetos\\Projeto VGD - CAD '
+   'Fornecedores\\fonte\\projeto_fornecedores\\venv\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks\\pyi_rth_inspect.py',
+   'PYSOURCE'),
+  ('pyi_rth_pkgutil',
+   'C:\\Mauro\\Projetos\\Projeto VGD - CAD '
+   'Fornecedores\\fonte\\projeto_fornecedores\\venv\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks\\pyi_rth_pkgutil.py',
+   'PYSOURCE'),
+  ('pyi_rth_multiprocessing',
+   'C:\\Mauro\\Projetos\\Projeto VGD - CAD '
+   'Fornecedores\\fonte\\projeto_fornecedores\\venv\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks\\pyi_rth_multiprocessing.py',
+   'PYSOURCE'),
+  ('pyi_rth_pkgres',
+   'C:\\Mauro\\Projetos\\Projeto VGD - CAD '
+   'Fornecedores\\fonte\\projeto_fornecedores\\venv\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks\\pyi_rth_pkgres.py',
+   'PYSOURCE'),
+  ('Principal',
+   'C:\\Mauro\\Projetos\\Projeto VGD - CAD '
+   'Fornecedores\\fonte\\projeto_fornecedores\\Principal.py',
+   'PYSOURCE'),
+  ('ConectorDB',
+   'C:\\Mauro\\Projetos\\Projeto VGD - CAD '
+   'Fornecedores\\fonte\\projeto_fornecedores\\ConectorDB.py',
+   'PYSOURCE'),
+  ('ConfigParser',
+   'C:\\Mauro\\Projetos\\Projeto VGD - CAD '
+   'Fornecedores\\fonte\\projeto_fornecedores\\ConfigParser.py',
+   'PYSOURCE'),
+  ('ArquivosDAO',
+   'C:\\Mauro\\Projetos\\Projeto VGD - CAD '
+   'Fornecedores\\fonte\\projeto_fornecedores\\ArquivosDAO.py',
+   'PYSOURCE'),
+  ('FornecedorDAO',
+   'C:\\Mauro\\Projetos\\Projeto VGD - CAD '
+   'Fornecedores\\fonte\\projeto_fornecedores\\FornecedorDAO.py',
+   'PYSOURCE'),
+  ('LogFornecedoresDAO',
+   'C:\\Mauro\\Projetos\\Projeto VGD - CAD '
+   'Fornecedores\\fonte\\projeto_fornecedores\\LogFornecedoresDAO.py',
+   'PYSOURCE'),
+  ('ListaManager',
+   'C:\\Mauro\\Projetos\\Projeto VGD - CAD '
+   'Fornecedores\\fonte\\projeto_fornecedores\\ListaManager.py',
+   'PYSOURCE'),
+  ('EncontrarArquivo5',
+   'C:\\Mauro\\Projetos\\Projeto VGD - CAD '
+   'Fornecedores\\fonte\\projeto_fornecedores\\EncontrarArquivo5.py',
+   'PYSOURCE'),
+  ('FornecedorValidator',
+   'C:\\Mauro\\Projetos\\Projeto VGD - CAD '
+   'Fornecedores\\fonte\\projeto_fornecedores\\FornecedorValidator.py',
+   'PYSOURCE')],
+ 'python311.dll',
+ True,
+ False,
+ False,
+ [],
+ None,
+ None,
+ None)

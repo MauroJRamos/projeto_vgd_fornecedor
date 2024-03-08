@@ -39,6 +39,8 @@ public class FornecedorDTO implements Serializable {
 	
 	private String dscPathCidade;
 	
+	private String pathPastaAno;
+	
 	public FornecedorDTO(Fornecedor entity) {
         this.id = entity.getId();
         this.dscFornecedor = entity.getDscFornecedor();
@@ -52,6 +54,7 @@ public class FornecedorDTO implements Serializable {
         this.dscContato03 = entity.getDscContato03();
         this.dscCategoria = entity.getDscCategoria();
         this.dscPathCidade = entity.getDscPathCidade();
+        this.pathPastaAno = entity.getPathPastaAno();
     }
 	
 }

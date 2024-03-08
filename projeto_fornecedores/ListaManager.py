@@ -54,7 +54,3 @@ def GetDadosPlanilhas(arquivo):
         error_message = f"Erro ao ler planilha: {e}"
         insertLogFornecedor(error_message, "Leitura planilha")
         return []
-
-
-def ExtraiValoresTabela():
-    return

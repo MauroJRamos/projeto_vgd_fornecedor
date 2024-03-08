@@ -117,7 +117,8 @@ useEffect(() => {
               <th scope="row">Contato02</th>
               <th scope="row">Contato03</th>
               <th scope="row">Categoria</th>
-              <th scope="row">Cidade Pasta</th>
+              <th scope="row">Cidade</th>
+              <th scope="row">Ano</th>
               <th> </th>
             </tr>
           </thead>
@@ -135,6 +136,7 @@ useEffect(() => {
                 <td>{item.dscContato03}</td>
                 <td>{item.dscCategoria}</td>
                 <td>{item.dscPathCidade}</td>
+                <td>{item.pathPastaAno}</td>
                 <td >
                   <div className=".column-buttons">
                     <Link to={`/fornecedores/${item.id}`} className="btn ">

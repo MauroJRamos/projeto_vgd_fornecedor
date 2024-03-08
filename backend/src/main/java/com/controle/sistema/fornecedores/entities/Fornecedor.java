@@ -53,4 +53,6 @@ public class Fornecedor implements Serializable {
 	@Column(name = "dsc_path_cidade")
 	private String dscPathCidade;
 	
+	@Column(name = "path_pasta_ano")
+	private String pathPastaAno;
 }

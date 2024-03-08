@@ -9,11 +9,11 @@ logging.basicConfig(level=logging.INFO)
 # Create a logger object
 logger = logging.getLogger(__name__)
 
-def insertFornecedor(cnx,fornecedor, email, data_solicitacao, retorno_01, tentativa_01, retorno_02, contato01, contato02, contato03, categoria, pasta):
+def insertFornecedor(cnx,fornecedor, email, data_solicitacao, retorno_01, tentativa_01, retorno_02, contato01, contato02, contato03, categoria, pasta, ano):
     try:
         cursor = cnx.cursor()
-        sql = "INSERT INTO tb_fornecedor (dsc_fornecedor, dsc_email, dsc_data_solicitacao, dsc_retorno_01, dsc_tentativa_01, dsc_retorno_02, dsc_contato_01, dsc_contato_02, dsc_contato_03, dsc_categoria, dsc_path_cidade) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)"
-        val = (fornecedor, email, data_solicitacao, retorno_01, tentativa_01, retorno_02, contato01, contato02, contato03, categoria, pasta)
+        sql = "INSERT INTO tb_fornecedor (dsc_fornecedor, dsc_email, dsc_data_solicitacao, dsc_retorno_01, dsc_tentativa_01, dsc_retorno_02, dsc_contato_01, dsc_contato_02, dsc_contato_03, dsc_categoria, dsc_path_cidade, path_pasta_ano) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)"
+        val = (fornecedor, email, data_solicitacao, retorno_01, tentativa_01, retorno_02, contato01, contato02, contato03, categoria, pasta, ano)
 
         cursor.execute(sql, val)
         cnx.commit()

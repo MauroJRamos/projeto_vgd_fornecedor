@@ -7,6 +7,7 @@ export type Fornecedor = {
     dscEmail: string;
     dscFornecedor: string;
     dscPathCidade: string;
+    pathPastaAno: string;
     dscRetorno01: string;
     dscRetorno02: string;
     dsctentativa01: string;
